@@ -16,9 +16,10 @@ Author: Guillaume Schreiner
 import argparse
 from collections import deque
 import socket
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
-plt.use('Agg')
 from threading import Thread
 
 class Redirector(Thread):
